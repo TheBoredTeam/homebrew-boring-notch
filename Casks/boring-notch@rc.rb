@@ -1,8 +1,8 @@
 cask "boring-notch@rc" do
-  version "2.7-rc.1"
-  sha256 "a4751822b2c72e3a5c3d41a3307421557f7f0717cf66e9f66faf3ce0e4d4103e"
+  version "2.7-rc.2"
+  sha256 "d2b6a14165077bdffe96b1b2f233bd058431c0f1951b7f1e7b25c24ea18b7f05"
 
-  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v#{version}/Flying_Rabbit.dmg"
+  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v#{version}/boringNotch.dmg"
   name "Boring Notch"
   desc "Not so boring notch That Rocks 🎸🎶 "
   homepage "https://github.com/TheBoredTeam/boring.notch"
