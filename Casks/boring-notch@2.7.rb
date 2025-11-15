@@ -1,4 +1,4 @@
-cask "boring-notch@rc" do
+cask "boring-notch@2.7" do
   version "2.7-rc.3"
   sha256 "853f6d8e405a6d730e524f2e864af1731b52cd191375f506678a62a63814bb81"
 

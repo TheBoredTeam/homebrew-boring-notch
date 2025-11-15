@@ -1,8 +1,8 @@
-cask "boring-notch@2.7" do
-  version "2.7-rc.3"
-  sha256 "853f6d8e405a6d730e524f2e864af1731b52cd191375f506678a62a63814bb81"
+cask "boring-notch@2.6" do
+  version "2.6"
+  sha256 "1a58ec27e5de30faf107fdf8b77575b1c39ace69e77b1330fc4ed6562bf2badc"
 
-  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v#{version}/boringNotch.dmg"
+  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v#{version}/WolfPainting.dmg"
   name "Boring Notch"
   desc "Not so boring notch That Rocks 🎸🎶 "
   homepage "https://github.com/TheBoredTeam/boring.notch"
@@ -11,7 +11,7 @@ cask "boring-notch@2.7" do
     url :url
     strategy :github_latest
   end
-  # auto_updates true
+  auto_updates true
   depends_on macos: ">= :sonoma"
 
   app "boringNotch.app"
