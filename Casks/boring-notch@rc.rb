@@ -1,17 +1,18 @@
 cask "boring-notch@rc" do
-  version "2.7-rc.3"
-  sha256 "853f6d8e405a6d730e524f2e864af1731b52cd191375f506678a62a63814bb81"
+  version "2.7.0"
+  sha256 "ffa5d94779b47fb5707e5c5a9d86a4515c91cb6c19183ad97b2e44d6637a6528"
 
-  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v#{version}/boringNotch.dmg"
-  name "Boring Notch"
-  desc "Not so boring notch That Rocks 🎸🎶 "
+  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v2.7.0/boringNotch.dmg"
+  name "Boring Notch RC"
+  desc "Not so boring notch That Rocks 🎸🎶 (Release Candidate)"
   homepage "https://github.com/TheBoredTeam/boring.notch"
 
   livecheck do
     url :url
     strategy :github_latest
   end
-  # auto_updates true
+
+  auto_updates true
   depends_on macos: ">= :sonoma"
 
   app "boringNotch.app"
