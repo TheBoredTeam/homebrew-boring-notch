@@ -1,8 +1,8 @@
 cask "boring-notch" do
-  version "2.7.0"
-  sha256 "ffa5d94779b47fb5707e5c5a9d86a4515c91cb6c19183ad97b2e44d6637a6528"
+  version "2.7"
+  sha256 "dc5ac939ac9ddbcac4cc00eb10a1d3a2fc89f44107f631b7fa0d95c4d4d057a7"
 
-  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v2.7.0/boringNotch.dmg"
+  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v2.7/boringNotch.dmg"
   name "Boring Notch"
   desc "Not so boring notch That Rocks 🎸🎶 "
   homepage "https://github.com/TheBoredTeam/boring.notch"
