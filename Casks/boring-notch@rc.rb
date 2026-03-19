@@ -18,9 +18,13 @@ cask "boring-notch@rc" do
   app "boringNotch.app"
 
   postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "/Applications/boringNotch.app"]
+    app_path = appdir/"boringNotch.app"
+    next unless app_path.exist?
+
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", app_path]
   end
 
+  uninstall quit: "theboringteam.boringnotch"
 
   zap trash: [
     "~/Library/Application Scripts/theboringteam.boringnotch/",
