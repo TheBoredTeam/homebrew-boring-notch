@@ -17,6 +17,11 @@ cask "boring-notch@rc" do
 
   app "boringNotch.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "/Applications/boringNotch.app"]
+  end
+
+
   zap trash: [
     "~/Library/Application Scripts/theboringteam.boringnotch/",
     "~/Library/Containers/theboringteam.boringnotch/",
