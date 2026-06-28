@@ -29,5 +29,6 @@ cask "boring-notch" do
   zap trash: [
     "~/Library/Application Scripts/theboringteam.boringnotch/",
     "~/Library/Containers/theboringteam.boringnotch/",
+    "~/Library/Containers/TheBoringNotch/",
   ]
 end
