@@ -17,11 +17,10 @@ cask "boring-notch" do
 
   app "boringNotch.app"
 
-  postflight do
-    app_path = appdir/"boringNotch.app"
-    next unless app_path.exist?
-
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", app_path]
+  postflight_steps do
+    if_path_exists "boringNotch.app", base: :appdir do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/boringNotch.app"]
+    end
   end
 
   uninstall quit: "theboringteam.boringnotch"
