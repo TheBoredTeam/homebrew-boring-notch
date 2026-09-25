@@ -1,7 +1,7 @@
 cask "boring-notch@rc" do
-  version "2.8-rc.0"
-  sha256 "7c276ec9f9666ebcc2a8029e03acdb29b8eaacffce0007281772cc01f3991595"
-  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v2.8-rc.0/boringNotch.dmg"
+  version "2.8-rc.1"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  url "https://github.com/TheBoredTeam/boring.notch/releases/download/v2.8-rc.1/Boring%20Notch.dmg"
   name "Boring Notch RC"
   desc "Not so boring notch That Rocks (Release Candidate)"
   homepage "https://github.com/TheBoredTeam/boring.notch"
@@ -11,10 +11,10 @@ cask "boring-notch@rc" do
   end
   auto_updates true
   depends_on macos: :sonoma
-  app "boringNotch.app"
+  app "Boring Notch.app"
 
   postflight do
-    app_path = appdir/"boringNotch.app"
+    app_path = appdir/"Boring Notch.app"
     next unless app_path.exist?
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", app_path]
   end
